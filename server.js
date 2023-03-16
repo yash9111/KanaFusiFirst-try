@@ -4,6 +4,7 @@ const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
 const UploadSchema = require('./models/Upload')
+const cors = require('cors')
 
 const dbConnection = require('./database/dbConnection');
 dbConnection();
@@ -14,7 +15,7 @@ const port = process.env.PORT || 3000;
 // configure body-parser middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-
+app.use(cors());
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
