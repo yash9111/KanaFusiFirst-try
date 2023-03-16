@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 
-const URI = `mongodb+srv://Adityadev:${process.env.SECRET_PASS}@cluster0.75kbw6j.mongodb.net/Node-Api?retryWrites=true&w=majority`
+const URI = `mongodb+srv://ypathak188:maggi2-00@kanafusi.80styik.mongodb.net/AllData?retryWrites=true&w=majority`
+
 
 const connection = () => {
     try {
