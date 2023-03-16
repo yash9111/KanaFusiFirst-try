@@ -10,7 +10,7 @@ const dbConnection = require('./database/dbConnection');
 dbConnection();
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 // configure body-parser middleware
 app.use(bodyParser.json());
